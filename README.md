@@ -17,9 +17,7 @@ Penguin Fashion is a **modern, responsive online fashion store** designed to off
 2️⃣ **Interactive Shopping Experience** – Users can browse, select & add items to cart seamlessly  
 3️⃣ **Fully Responsive Design** – Optimized for mobile, tablet & desktop screens  
 
-## 📂 Project Structure - 🎯 How to Use
-
-1️⃣ Clone the repository:
+## 🎯 How to Use - Clone the repository
 
 ```plaintext
 git clone https://github.com/KINGALVI/Penguin-Fashion.git
