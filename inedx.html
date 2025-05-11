@@ -21,132 +21,479 @@
       }
     }
   </script>
-  <title>penguin fashion</title>
+
+  <title>Penguin Fashion</title>
 </head>
 
 <body>
   <header class="bg-penguin">
+    <!-- Header section for branding and navigation.
+     - `bg-penguin`: Uses the custom Tailwind color defined in the theme. -->
+
     <br>
-    <center><img src="Project-Design-Image/images/logo.png" alt=""></center>
+
+    <center>
+      <img src="Project-Design-Image/images/logo.png" alt="Penguin Fashion Logo">
+    </center>
+    <!-- Displays the company logo at the center of the header. -->
+
     <section class="container mx-auto sm:flex items-center justify-center">
+      <!-- Main header layout:
+       - `container mx-auto`: Centers the section while adding default margins.
+       - `sm:flex`: Converts it into a flex container on small screens and larger.
+       - `items-center justify-center`: Ensures vertical and horizontal centering. -->
+
       <div class="space-y-5">
+        <!-- Text content container:
+         - `space-y-5`: Adds vertical spacing between elements inside the div. -->
+
         <h1 class="text-5xl text-yellow-400 font-bold">BE THE PENGUIN</h1>
         <h1 class="text-5xl text-black font-bold">OF WINTER</h1>
-        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, error? <br> Lorem
-          ipsum dolor sit amet.</p>
-        <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-            class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        <!-- Large headings designed to catch attention using Tailwind utilities. -->
+
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, error? <br> Lorem ipsum dolor sit amet.
+        </p>
+        <!-- Placeholder paragraph with `text-justify` to ensure uniform text alignment. -->
+
+        <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+          <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+        </button>
+        <!-- Call-to-action button with:
+         - `uppercase`: Converts text to uppercase.
+         - `bg-lime-600`: Green background.
+         - `rounded-l-3xl rounded-r-3xl`: Applies rounded edges.
+         - FontAwesome shopping cart icon. -->
       </div>
-      <div class="ml-10"><img src="Project-Design-Image/images/model.png" alt=""></div>
+
+      <div class="ml-10">
+        <img src="Project-Design-Image/images/model.png" alt="Model Wearing Jacket">
+      </div>
+      <!-- Right section containing the fashion model image.
+       - `ml-10`: Adds left margin for spacing. -->
     </section>
   </header>
 
   <main class="container mx-auto">
-    <!-- women jacket -->
-    <h2 class="text-5xl font-bold">women jacket</h2>
+    <!-- Main section wrapping all content inside a centered container. -->
+
+    <br><br>
+
+    <!-- WOMEN JACKETS -->
+    <h2 class="text-5xl text-center font-bold">Women Jacket</h2>
+    <!-- Section heading with large font size for emphasis. -->
+
     <section class="container md:grid grid-cols-3 gap-7">
+      <!-- Section container wrapping all product cards:
+       - `container`: Ensures proper spacing and alignment within the page layout.
+       - `md:grid`: Converts the section into a grid layout when the screen size is medium (`md`) or larger.
+       - `grid-cols-3`: Divides the section into three equal columns for displaying three product cards side by side.
+       - `gap-7`: Adds spacing between the grid items to prevent cluttered visuals. -->
+
+      <!-- First product card -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-1.png" alt=""></div>
-        <h2 class="text-3xl font-semibold">yellow code jacket</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
+        <!-- Product card container:
+         - `p-5`: Adds padding inside the container for better spacing around elements.
+         - `shadow-lg`: Applies a large shadow effect to make the card visually stand out.
+         - `rounded-xl`: Provides rounded edges for a smooth modern look. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container with background styling:
+           - `p-5`: Adds internal padding to ensure proper spacing inside the container.
+           - `bg-slate-400`: Applies a slate-gray background color for contrast.
+           - `rounded-xl`: Ensures rounded corners for a refined appearance. -->
+
+          <img src="Project-Design-Image/images/jacket-1.png" alt="Yellow Code Jacket">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-1.png"`: Specifies the image source.
+           - `alt="Yellow Code Jacket"`: Alternative text for accessibility and SEO optimization. -->
+        </div>
+
+        <h2 class="text-3xl font-semibold">Yellow Code Jacket</h2>
+        <!-- Product name:
+         - `text-3xl`: Sets a large text size for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis. -->
+
+        <p>
+          <!-- Product description providing brief details about the jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
+
         <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures even spacing by placing price on the left and button on the right. -->
+
           <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          <!-- Product price:
+           - `text-5xl`: Sets an extra-large font size for strong visibility.
+           - `font-bold`: Makes the text bold for emphasis.
+           - `text-yellow-400`: Uses yellow text color to highlight pricing details. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <!-- Call-to-action purchase button:
+             - `uppercase`: Converts text to uppercase for readability.
+             - `bg-lime-600`: Applies a vibrant lime-green background.
+             - `text-white`: Uses white text for strong contrast.
+             - `font-semibold`: Ensures bold text for prominence.
+             - `px-5 py-5`: Adds padding to increase clickable area.
+             - `rounded-l-3xl rounded-r-3xl`: Ensures rounded edges for a smooth button design. -->
+
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon before button text for clear purchase indication. -->
+          </button>
         </div>
       </div>
+
+      <!-- Second product card -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-2.png" alt=""></div>
-        <h2 class="text-3xl font-semibold">yellow code jacket</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
+        <!-- Product card container:
+         - `p-5`: Adds padding inside the container for better spacing around elements.
+         - `shadow-lg`: Applies a large shadow effect to make the card visually stand out.
+         - `rounded-xl`: Provides rounded edges for a smooth modern look. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container with background styling:
+           - `p-5`: Adds internal padding to ensure proper spacing inside the container.
+           - `bg-slate-400`: Applies a slate-gray background color for contrast.
+           - `rounded-xl`: Ensures rounded corners for a refined appearance. -->
+
+          <img src="Project-Design-Image/images/jacket-2.png" alt="Yellow Code Jacket">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-2.png"`: Specifies the image source.
+           - `alt="Yellow Code Jacket"`: Alternative text for accessibility and SEO optimization. -->
+
+        </div>
+
+        <h2 class="text-3xl font-semibold">Yellow Code Jacket</h2>
+        <!-- Product name:
+         - `text-3xl`: Sets a large text size for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis. -->
+
+        <p>
+          <!-- Product description providing brief details about the jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
         <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures even spacing by placing price on the left and button on the right. -->
+
           <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          <!-- Product price:
+           - `text-5xl`: Sets an extra-large font size for strong visibility.
+           - `font-bold`: Makes the text bold for emphasis.
+           - `text-yellow-400`: Uses yellow text color to highlight pricing details. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon before button text for clear purchase indication. -->
+          </button>
         </div>
       </div>
+
+      <!-- Third product card -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-3.png" alt=""></div>
-        <h2 class="text-3xl font-semibold">yellow code jacket</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
-        <div class="flex justify-between">
-          <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        <!-- Product card container:
+         - `p-5`: Adds padding inside the container for better spacing around elements.
+         - `shadow-lg`: Applies a large shadow effect to make the card visually stand out.
+         - `rounded-xl`: Provides rounded edges for a smooth modern look. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container with background styling:
+           - `p-5`: Adds internal padding to ensure proper spacing inside the container.
+           - `bg-slate-400`: Applies a slate-gray background color for contrast.
+           - `rounded-xl`: Ensures rounded corners for a refined appearance. -->
+
+          <img src="Project-Design-Image/images/jacket-3.png" alt="Yellow Code Jacket">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-2.png"`: Specifies the image source.
+           - `alt="Yellow Code Jacket"`: Alternative text for accessibility and SEO optimization. -->
+
         </div>
+
+        <h2 class="text-3xl font-semibold">Yellow Code Jacket</h2>
+        <!-- Product name:
+         - `text-3xl`: Sets a large text size for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis. -->
+
+        <p>
+          <!-- Product description providing brief details about the jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
+
+        <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures even spacing by placing price on the left and button on the right. -->
+
+          <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
+          <!-- Product price:
+           - `text-5xl`: Sets an extra-large font size for strong visibility.
+           - `font-bold`: Makes the text bold for emphasis.
+           - `text-yellow-400`: Uses yellow text color to highlight pricing details. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon before button text for clear purchase indication. -->
+          </button>
+
+        </div>
+
       </div>
+
     </section>
 
-    <h2 class="text-5xl font-bold">men jacket</h2>
+    <br><br>
+
+    <!-- MEN JACKETS -->
+    <h2 class="text-5xl text-center font-bold">men jacket</h2>
+    <!-- Section heading with large font size for emphasis. -->
+
     <section class="container md:grid grid-cols-3 gap-7">
+      <!-- Section container wrapping all product cards:
+       - `container`: Ensures proper spacing and alignment within the page layout.
+       - `md:grid`: Converts the section into a grid layout when the screen size is medium (`md`) or larger.
+       - `grid-cols-3`: Divides the section into three equal columns for displaying three product cards side by side.
+       - `gap-7`: Adds spacing between the grid items to prevent cluttered visuals. -->
+
+      <!-- First product card - Snowboard Jacket Mens -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-4.png" alt=""></div>
+        <!-- Product card container:
+         - `p-5`: Adds padding inside the container for better spacing around elements.
+         - `shadow-lg`: Applies a large shadow effect to make the card visually stand out.
+         - `rounded-xl`: Provides rounded edges for a smooth modern look. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container with background styling:
+           - `p-5`: Adds internal padding to ensure proper spacing inside the container.
+           - `bg-slate-400`: Applies a slate-gray background color for contrast.
+           - `rounded-xl`: Ensures rounded corners for a refined appearance. -->
+
+          <img src="Project-Design-Image/images/jacket-4.png" alt="Snowboard Jacket Mens">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-4.png"`: Specifies the image source.
+           - `alt="Snowboard Jacket Mens"`: Alternative text for accessibility and SEO optimization. -->
+        </div>
+
         <h2 class="text-3xl font-semibold">Snowboard Jacket Mens</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
+        <!-- Product name:
+         - `text-3xl`: Sets a large text size for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis. -->
+
+        <p>
+          <!-- Product description providing brief details about the jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
+
         <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures even spacing by placing price on the left and button on the right. -->
+
           <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          <!-- Product price:
+           - `text-5xl`: Sets an extra-large font size for strong visibility.
+           - `font-bold`: Makes the text bold for emphasis.
+           - `text-yellow-400`: Uses yellow text color to highlight pricing details. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <!-- Call-to-action purchase button:
+             - `uppercase`: Converts text to uppercase for readability.
+             - `bg-lime-600`: Applies a vibrant lime-green background.
+             - `text-white`: Uses white text for strong contrast.
+             - `font-semibold`: Ensures bold text for prominence.
+             - `px-5 py-5`: Adds padding to increase clickable area.
+             - `rounded-l-3xl rounded-r-3xl`: Ensures rounded edges for a smooth button design. -->
+
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon before button text for clear purchase indication. -->
+          </button>
+
         </div>
+
       </div>
+
+      <!-- Second product card - Man Leather Jackets -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-5.png" alt=""></div>
+        <!-- Product card container:
+         - `p-5`: Adds padding around the card for spacing.
+         - `shadow-lg`: Applies a large shadow effect to enhance depth and visibility.
+         - `rounded-xl`: Provides smooth, rounded edges for a modern design. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container:
+           - `p-5`: Adds padding inside the container for spacing around the image.
+           - `bg-slate-400`: Applies a slate-gray background to contrast the image.
+           - `rounded-xl`: Ensures rounded corners to match the card's aesthetic. -->
+
+          <img src="Project-Design-Image/images/jacket-5.png" alt="Man Leather Jackets">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-5.png"`: Specifies the image source.
+           - `alt="Man Leather Jackets"`: Provides alternative text for accessibility and SEO. -->
+        </div>
+
         <h2 class="text-3xl font-semibold">Man Leather Jackets</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
+        <!-- Product name:
+         - `text-3xl`: Sets the text size to large for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis on the product title. -->
+
+        <p>
+          <!-- Product description providing brief information about the jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
+
         <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures equal spacing by distributing price on the left and button on the right. -->
+
           <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          <!-- Product price:
+           - `text-5xl`: Extra-large font size for prominent visibility.
+           - `font-bold`: Makes the text bold for emphasis.
+           - `text-yellow-400`: Uses a yellow shade to highlight the price. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <!-- Call-to-action button:
+             - `uppercase`: Converts text to uppercase for readability.
+             - `bg-lime-600`: Applies a vibrant green background.
+             - `text-white`: Ensures white text for contrast.
+             - `font-semibold`: Makes text slightly bold.
+             - `px-5 py-5`: Adds padding for a comfortable clickable area.
+             - `rounded-l-3xl rounded-r-3xl`: Creates rounded button edges. -->
+
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon alongside "BUY NOW" text. -->
+          </button>
+
         </div>
+
       </div>
+
+      <!-- Third product card - Man Casual Jackets -->
       <div class="p-5 shadow-lg rounded-xl">
-        <div class="p-5 bg-slate-400 rounded-xl"><img src="Project-Design-Image/images/jacket-6.png" alt=""></div>
+        <!-- Product card container:
+         - `p-5`: Adds padding around the card for structured spacing.
+         - `shadow-lg`: Applies a large shadow effect to enhance visual depth.
+         - `rounded-xl`: Provides rounded edges for a refined and modern look. -->
+
+        <div class="p-5 bg-slate-400 rounded-xl">
+          <!-- Image container:
+           - `p-5`: Adds padding inside for spacing around the image.
+           - `bg-slate-400`: Uses a slate-gray background to provide contrast.
+           - `rounded-xl`: Ensures rounded corners to match the card’s overall aesthetic. -->
+
+          <img src="Project-Design-Image/images/jacket-6.png" alt="Man Casual Jackets">
+          <!-- Product image:
+           - `src="Project-Design-Image/images/jacket-6.png"`: Specifies the image source.
+           - `alt="Man Casual Jackets"`: Provides alternative text for accessibility and SEO optimization. -->
+        </div>
+
         <h2 class="text-3xl font-semibold">Man Casual Jackets</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
-          impedit!</p>
+        <!-- Product name:
+         - `text-3xl`: Defines large text size for clear readability.
+         - `font-semibold`: Ensures bold styling for emphasis. -->
+
+        <p>
+          <!-- Product description providing details about the casual jacket. -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, perferendis beatae ipsam expedita dicta
+          impedit!
+        </p>
+
         <div class="flex justify-between">
+          <!-- Flexbox container aligning price and button side by side:
+           - `flex`: Enables flexible positioning of elements.
+           - `justify-between`: Ensures equal spacing between price and button. -->
+
           <h1 class="text-5xl font-bold text-yellow-400">$234</h1>
-          <button class=" uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl"><i
-              class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          <!-- Product price:
+           - `text-5xl`: Extra-large font size for strong emphasis.
+           - `font-bold`: Makes text bold to highlight importance.
+           - `text-yellow-400`: Uses yellow text to distinguish pricing details. -->
+
+          <button class="uppercase bg-lime-600 text-white font-semibold px-5 py-5 rounded-l-3xl rounded-r-3xl">
+            <!-- Call-to-action button:
+             - `uppercase`: Converts text to uppercase for prominence.
+             - `bg-lime-600`: Uses a vibrant lime-green background.
+             - `text-white`: Ensures high contrast for readability.
+             - `font-semibold`: Makes text slightly bold.
+             - `px-5 py-5`: Adds padding for improved usability.
+             - `rounded-l-3xl rounded-r-3xl`: Ensures rounded edges for a sleek button appearance. -->
+
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            <!-- FontAwesome shopping cart icon alongside "BUY NOW" text. -->
+          </button>
         </div>
       </div>
+
     </section>
+
   </main>
 
-  <footer class="mt-20 mb-20">
-    <div class="sm:grid grid-cols-2 gap-5">
-      <div class="h-32 flex items-center shadow-lg">
-        <img class="h-28 pr-5" src="Project-Design-Image/images/house.png" alt="">
-        <div>
-          <h3 class="text-2xl pb-3">Find the Perfect Fit</h3>
-          <p>Everybody is different, which is why we
-            offer styles for every body</p>
-        </div>
+  <footer class="bg-gray-900 text-white py-16 mt-20">
+    <!-- Footer container:
+     - `bg-gray-900`: Sets a dark background for better contrast.
+     - `text-white`: Ensures white text for readability.
+     - `py-16`: Adds vertical padding for spacing.
+     - `mt-20`: Adds a top margin for separation from previous content. -->
+
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <!-- Layout:
+       - `container mx-auto`: Centers content within a responsive container.
+       - `grid md:grid-cols-3`: Converts into a three-column grid on medium screens and larger.
+       - `gap-8`: Adds spacing between grid items.
+       - `text-center md:text-left`: Centers text on small screens, left-aligns on medium+. -->
+
+      <!-- First Feature -->
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <!-- Flexbox for vertical arrangement:
+         - `flex flex-col`: Stacks items in a column.
+         - `items-center md:items-start`: Centers items on small screens, left-aligns them on medium+.
+         - `space-y-4`: Adds vertical spacing between child elements. -->
+
+        <img class="h-16" src="Project-Design-Image/images/house.png" alt="Find the Perfect Fit">
+        <h3 class="text-xl font-semibold">Find the Perfect Fit</h3>
+        <p class="text-gray-300">Everybody is different, which is why we offer styles for every body.</p>
       </div>
-      <div class="h-32 flex items-center shadow-lg">
-        <img class="h-28 pr-4" src="Project-Design-Image/images/box.png" alt="">
-        <div>
-          <h3 class="text-2xl pb-3">Free Exchanges</h3>
-          <p>One of the many reasons you can shop
-            with peace of mind.</p>
-        </div>
+
+      <!-- Second Feature -->
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <!-- Flexbox for vertical arrangement:
+         - `flex flex-col`: Stacks items in a column.
+         - `items-center md:items-start`: Centers items on small screens, left-aligns them on medium+.
+         - `space-y-4`: Adds vertical spacing between child elements. -->
+
+        <img class="h-16" src="Project-Design-Image/images/box.png" alt="Free Exchanges">
+        <h3 class="text-xl font-semibold">Free Exchanges</h3>
+        <p class="text-gray-300">One of the many reasons you can shop with peace of mind.</p>
       </div>
-      <div class="h-32 flex items-center shadow-lg">
-        <img class="h-28 pr-5" src="Project-Design-Image/images/question.png" alt="">
-        <div>
-          <h3 class="text-2xl pb-3">Contact Our Seller</h3>
-          <p>They are here to help you. That's quite
-            literally what we pay them for.</p>
-        </div>
+
+      <!-- Third Feature -->
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <!-- Flexbox for vertical arrangement:
+         - `flex flex-col`: Stacks items in a column.
+         - `items-center md:items-start`: Centers items on small screens, left-aligns them on medium+.
+         - `space-y-4`: Adds vertical spacing between child elements. -->
+
+        <img class="h-16" src="Project-Design-Image/images/question.png" alt="Contact Our Seller">
+        <h3 class="text-xl font-semibold">Contact Our Seller</h3>
+        <p class="text-gray-300">They are here to help you. That's quite literally what we pay them for.</p>
       </div>
-      <div class=" row-span-3"><img src="Project-Design-Image/images/shopping.png" alt=""></div>
     </div>
+
+    <!-- Large Shopping Image -->
+    <div class="flex justify-center mt-12">
+      <img class="h-96" src="Project-Design-Image/images/shopping.png" alt="Shopping Illustration">
+    </div>
+
   </footer>
+
 </body>
 
 </html>
